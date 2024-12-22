@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap');
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-display: column;
+    background: #EBF2F7 !important;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.wrapper{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 1400px !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+}
+
+.top{
+    padding-top: 35px;
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(226, 228, 255) !important;
+}
+
+.title{
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 4rem;
+}
+.createBtn{
+    border: none !important;
+    background: rgb(114, 48, 255) !important;
+    color: #fff !important;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14) !important;
+}
+.cancelBtn{
+    border: none !important;
+}
+.create-Btn{
+    border: none !important;
+    background: #54ffac;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px !important;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+}
+
+/*create task*/
+.form-group{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.label{
+    font-weight: 500;
+    font-size: 18px;
+}
+.form-control{
+    margin-top: 10px;
+    background: #fff;
+    border-color: rgb(133, 133, 133) !important;
+    border-radius: 8px !important;
+    padding: 10px !important;
+    
+}
+
+
+
+/*Cards*/
+
+.card-wrapper{
+    display: grid;
+    padding: 6rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 0rem;
+    grid-row-gap: 0rem;
+}
+
+.card{
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+.name{
+    margin-bottom: 0px !important;
+    padding: 5px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 15px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    box-shadow:rgba(19, 34, 68, 0.12) 0px -6px 6px -6px;
+}
+.desc{
+    font-size: 17px;
+}
+.icons{
+    margin-top: 80px;
+    margin-left: 270px;
+}
+.edit{
+    margin-right: 10px;
+}
+.card-ver{
+    border-radius: 10px !important;
+    padding-top: 0px;
+    width: 350px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    height: 200px;
+    box-shadow: 0px 8px 28px -6px rgba(19, 34, 68, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+}
+
+
+
+/*responsive*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1024px) {
+    
+    .wrapper{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 900px !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    }
+
+    .card-wrapper{
+        display: grid;
+        padding: 4rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .wrapper{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 700px !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    }
+    .card-wrapper{
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+    .card-ver{
+        border-radius: 10px !important;
+        padding-top: 0px;
+        width: 300px;
+        font-family: 'Baloo Tammudu 2', cursive;
+        height: 200px;
+        box-shadow: 0px 8px 28px -6px rgba(19, 34, 68, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    }
+    .icons{
+        margin-top: 80px;
+        margin-left: 225px;
+    }
+    .edit{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .wrapper{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 350px !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    }
+    .card-wrapper{
+        display: grid;
+        padding: 1.5rem;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+    
+.top{
+    padding-top: 20px;
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(226, 228, 255) !important;
+}
+}
